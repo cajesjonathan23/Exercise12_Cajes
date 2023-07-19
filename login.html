@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .btn-no-decoration {
+            text-decoration: none;
+            color: white;
+        }
+        .btn-no-decoration2 {
+            text-decoration: none;
+            color: blue;
+        }
+        .avatar-container {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center align horizontally */
+            margin-bottom: 20px; /* Add some spacing below the icon */
+        }
+        .avatar-icon {
+            width: 130px; /* Adjust the width as needed */
+            height: 130px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5 py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title text-center bg-warning text-white p-2">Login</h1>
+                    <div class="avatar-container my-3">
+                        <img src="img/userpng.png" alt="Avatar" class="avatar-icon">
+                    </div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success"><a href="landingPage.html" class="btn-no-decoration">Login</a></button>
+                        </div><br>
+                        <div class="mb-3 text-center">
+                            <label>Don't have an account |</label>
+                            <a href="registrationForm.html" class="btn-no-decoration2">Register Now</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

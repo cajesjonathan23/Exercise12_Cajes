@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <style>
+    html,body{
+        font-family: "Century Gothic";
+        font-weight: bold;
+    }
+  
+    .con-row{
+        padding: 10px;
+    }
+    .con-resize .row .col-4 img{
+        height: 300px;
+    }
+    .navbar-brand{
+        text-transform: capitalize;
+    }
+
+
+    .navbar-brand {
+        font-size: 25px;
+        font-family: "Century Gothic";
+    }
+    .header-menu ul li{
+        padding: 5px;
+    }
+    .header-menu ul li a {
+        color: black;
+        font-size: 18px;
+        padding: 15px; 
+    }
+    
+    .header-menu ul li a:hover {
+        color: white;
+        background-color: rgb(21, 21, 21);
+        padding: 15px 20px; 
+    }
+
+   
+    .custom-container {
+        padding-top: 50px;
+        padding-bottom: 50px; 
+        text-align: center;
+    }
+    .custom-container img{
+        height: 280px;
+    }
+   /*  */
+   
+     .filter-bar {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+
+        .search-input {
+            width: 200px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .image-logo{
+    width: 50px;
+   }
+   .image-logo{
+    width: 50px;
+   }
+   
+   </style>
+</head>
+<body class="">
+
+  <nav class="navbar navbar-expand-md bg-warning sticky-top">
+    <div class="container-fluid">
+        <!-- Navigation Title -->
+        <a  class="navbar-brand mx-5" href=""><img src="img/rider.png" alt="" class="image-logo">FEED ME</a>
+        <!-- Navigation Title -->
+        <!-- Navigation Button -->
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigationExercise10">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation Button -->
+        <!-- Navigation List -->
+        <div class="collapse navbar-collapse header-menu mx-5 " id="navigationExercise10">
+            <ul class="navbar-nav ms-auto">
+                <li class="navbar-item ">
+                    <a href="WD76_EXERCISE_CAJES.html" class="nav-link">HOME</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="branch.html" class="nav-link">BRANCH</a>
+                </li>
+                <li class="navbar-item ">
+                    <a href="" class="nav-link">MY CART</a>
+                </li>
+                <li class="navbar-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="dropdownSample" data-bs-toggle="dropdown">ACCOUNTS</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="" class="dropdown-item">MY PROFILE</a>
+                        </li>
+                        <li><a href="" class="dropdown-item">ORDERS</a></li>
+                        <li><a href="WD76_EXERCISE_CAJES.html" class="dropdown-item">LOGOUT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+         <!-- Navigation List -->
+    </div>
+  </nav>
+  <div class="container mt-3">
+    <div class="row filter-bar">
+        <div class="col-md-6">
+            <label for="category">Category:</label>
+            <select name="category" id="category" style="height: 30px;">
+                <option value="all">All</option>
+                <option value="pork">Pork</option>
+                <option value="chicken">Chicken</option>
+                <option value="beverages">Beverages</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="search-input w-75" placeholder="Search">
+            <button class="btn btn-primary">Search</button>
+        </div>
+    </div>
+</div>
+  <div class="container mt-3">
+    <div class="row g-4" id="card-container">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/sisig11.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Sizzling Sisig | Category: Pork
+                    </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                    <p class="card-text">
+                        Filipino's favorite pulutan, sizzling hot pork face sisig in chili pepper garnished with margarine and fresh calamansi extract, topped with sunny-side up egg and sesame seeds. Category: Pork Taste: Midly spicy-extra spicy. Ingredients: Pork face, chili pepper. Good for: 2-3 person.
+                    </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+   
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/sisig11.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Sizzling Sisig | Category: Pork
+                    </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                   
+                    <p class="card-text">
+                        Filipino's favorite pulutan, sizzling hot pork face sisig in chili pepper garnished with margarine and fresh calamansi extract, topped with sunny-side up egg and sesame seeds. Category: Pork Taste: Midly spicy-extra spicy. Ingredients: Pork face, chili pepper. Good for: 2-3 person.
+                    </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/sisig11.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title">Sizzling Sisig | Category: Pork
+                    </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                    <p class="card-text">
+                        Filipino's favorite pulutan, sizzling hot pork face sisig in chili pepper garnished with margarine and fresh calamansi extract, topped with sunny-side up egg and sesame seeds. Category: Pork Taste: Midly spicy-extra spicy. Ingredients: Pork face, chili pepper. Good for: 2-3 person.
+                    </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/crispy_fried_chicken.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title"> Fried Chicken | Cat:Chicken
+                       </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                    <p class="card-text">
+                        Six large pieces of Filipino style crunchy crispy fried chicken served with optional hot sauce, catsup or toyomansi sauce.  </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/crispy_fried_chicken.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title"> Fried Chicken | Cat:Chicken
+                       </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                    <p class="card-text">
+                        Six large pieces of Filipino style crunchy crispy fried chicken served with optional hot sauce, catsup or toyomansi sauce.  </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/crispy_fried_chicken.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h4 class="card-title"> Fried Chicken | Cat:Chicken
+                       </h4><hr>
+                    <h5 class="card-subtitle text-danger"> Php 149.00</h5><hr>
+                    <p class="card-text">
+                        Six large pieces of Filipino style crunchy crispy fried chicken served with optional hot sauce, catsup or toyomansi sauce.  </p><hr>
+                    <!-- <button class="btn btn-success">Order Me</button> -->
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <button class="btn btn-success"><i class="fas fa-cart-shopping"></i> Order Now</button>
+                          </div>
+                          <div class="col-6">
+                            <button class="btn btn-warning"><i class="fas fa-cart-shopping"></i> Add to Cart</button>
+                          </div>
+                          
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+               
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var categorySelect = document.getElementById("category");
+        var searchInput = document.querySelector(".search-input");
+        var cards = document.querySelectorAll("#card-container .col-md-4");
+
+        categorySelect.addEventListener("change", filterCards);
+        searchInput.addEventListener("input", filterCards);
+
+        function filterCards() {
+            var selectedCategory = categorySelect.value.toLowerCase();
+            var searchQuery = searchInput.value.toLowerCase();
+
+            cards.forEach(function (card) {
+                var cardCategory = card.querySelector(".card-title").textContent.toLowerCase();
+                var cardText = card.querySelector(".card-text").textContent.toLowerCase();
+
+                var categoryMatch = selectedCategory === "all" || cardCategory.includes(selectedCategory);
+                var searchMatch = cardText.includes(searchQuery);
+
+                if (categoryMatch && searchMatch) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+    });
+</script>
+
+
+</body>
+</html>
